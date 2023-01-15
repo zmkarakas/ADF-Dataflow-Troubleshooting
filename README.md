@@ -4,4 +4,6 @@ This project is for explaining the different kinds of errors faced in mapping da
 
 There are two main categories of errors in Azure, UserErrors and SystemErrors. I have created two different .txt files for each categories. However for user errors sometimes it is not correct categorization, as outages can also create usererrors.
 
-There is of course excellent resources or docs explaining the troubleshooting, however i wanted to give my perspective from my experience
+There is of course excellent resources or docs explaining the troubleshooting, however i wanted to give my perspective from my experience.
+
+Its also useful to note that wrangling dataflows are now called PowerQuery activity, thus we would be talking about mapping dataflows here.
