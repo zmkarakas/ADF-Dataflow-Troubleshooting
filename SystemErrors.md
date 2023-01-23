@@ -7,6 +7,7 @@ In Synapse dataflows, these kind of errors are generally the same across the boa
 Here is an example of an internal server error:
 
 ![internal2](https://user-images.githubusercontent.com/50174304/214174334-ed923dd8-a7d0-4c58-9ebf-3c394e438fcc.png)
+
 This error only resolved after 4 hours. Incidents take all the way from seconds to hours to get auto-mitigated
 
 Setting aside exceptional scenarios, here is how to handle them:
