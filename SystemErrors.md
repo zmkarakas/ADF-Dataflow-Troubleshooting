@@ -4,6 +4,11 @@ Error text messages usually start with "DF-" meaning dataflow, and next categori
 
 In Synapse dataflows, these kind of errors are generally the same across the board as ADF. 
 
+Here is an example of an internal server error:
+
+![internal2](https://user-images.githubusercontent.com/50174304/214174334-ed923dd8-a7d0-4c58-9ebf-3c394e438fcc.png)
+This error only resolved after 4 hours. Incidents take all the way from seconds to hours to get auto-mitigated
+
 Setting aside exceptional scenarios, here is how to handle them:
 
 Even though they are system errors, in Out Of Memory(OOM) cases, the error results from user side, in that the user did not set up enough compute to handle the load, in this case usually upscaling the core size and switching to memory optimized would work. They can also be categorized as performance errors, thus troubleshooting the performance is also useful. For example, if source is SQL, then SQL partioning is important. For example if using Azure SQL, select source partioning under Optimize tab. In file based scenarios, rather than handling many small files, consider putting data into fewer but larger files. Also make adjustments for partioning under Optimize tab of the dataflow, such as Hash or Round Robin. For OOM related internal errors, retrying will not help, and is a permenant error, unlike the outage related ones. It is good to keep in mind that expensive transformations exponentially affect the memory and compute that is required. These transformations such as pivot, unpivot, window, joins, aggregations might run eventually into OOM related errors even though you think you have enough compute or memory on your side. One of the features of dataflows is the ability to read in parallel from many different sources, however, too many parallel running flows might stress the memory. 
