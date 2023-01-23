@@ -4,7 +4,7 @@ Error text messages usually start with "DF-" meaning dataflow, and next categori
 
 In Synapse dataflows, these kind of errors are generally the same across the board as ADF. 
 
-Here is an example of an internal server error:
+Here is an example of this error:
 
 ![internal2](https://user-images.githubusercontent.com/50174304/214174334-ed923dd8-a7d0-4c58-9ebf-3c394e438fcc.png)
 
