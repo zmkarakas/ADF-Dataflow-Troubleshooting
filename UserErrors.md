@@ -1,7 +1,7 @@
 UserErrors encountered on Dataflows in ADF and Synapse pipelines can be categorized in different ways. Firstly, there are performance related problems that are not otherwise put into the SystemError category. An example is abnormally long-running flows, or hanging at execution. Another kind of very common issue is running into problems in a certain row or certain column due to different causes such as datatype mismatch, misconfigurations in mapping, or simply because a character somewhere in the setup is interfering with spark.
 
 
-Besides these, most commonly run into errors usually specify the location of the error, and the type of application or connector associated with it. Snippets from error message might be like this "DF-File-InvalidSparkFolder" "Failure at source". Since there are many connectors(ODBC/JDBC) in Dataflows, the issues associated with them are also varied. Certain applications are more prone to erroring. These error messages are very helpful in localizing the problem and swiftly taking actions for mitigation.
+Besides these, most commonly run into errors usually specify the location of the error, and the type of application or connector associated with it. Snippets from error message might be like this {"Status Code" :"DF-File-InvalidSparkFolder", "Message": "Failure at source". Since there are many connectors(ODBC/JDBC) in Dataflows, the issues associated with them are also varied. Certain applications are more prone to erroring. These error messages are very helpful in localizing the problem and swiftly taking actions for mitigation.
 
 
 From a permenancy point of view, User errors can be put into 2 types. 
