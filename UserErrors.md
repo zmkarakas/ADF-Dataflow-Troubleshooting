@@ -1,3 +1,5 @@
+## User Errors encountered in ADF-Mapping Dataflow
+
 UserErrors encountered on Dataflows in ADF and Synapse pipelines can be categorized in different ways. Firstly, there are performance related problems that are not otherwise put into the SystemError category. An example is abnormally long-running flows, or hanging at execution. Another kind of very common issue is running into problems in a certain row or certain column due to different causes such as datatype mismatch, misconfigurations in mapping, or simply because a character somewhere in the setup is interfering with spark.
 
 
