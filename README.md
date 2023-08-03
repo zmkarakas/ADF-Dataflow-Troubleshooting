@@ -7,3 +7,5 @@ There are two main categories of errors in Azure, UserErrors and SystemErrors. I
 There is of course excellent resources or docs explaining the troubleshooting, however i wanted to give my perspective from my experience. This guide is just complementary to the official troubleshooting guide in MS docs, and seeks to give an overview to the reader
 
 Its also useful to note that wrangling dataflows are now called PowerQuery activity, thus we would be talking about mapping dataflows here.
+
+Please fork it if you liked :)
