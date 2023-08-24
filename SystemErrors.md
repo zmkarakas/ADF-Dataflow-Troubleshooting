@@ -18,6 +18,5 @@ Even though they are system errors, in Out Of Memory(OOM) cases, the error resul
 
 It is sometimes hard to distinguish these internal server errors especially when they are permenant, in that case, create a support ticket with ADF or Synapse (whichever dataflow you are using). 
 
-I have so far talked about the most common kind of system errors, but there are many others. 
 
 
